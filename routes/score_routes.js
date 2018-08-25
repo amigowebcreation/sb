@@ -93,6 +93,9 @@ module.exports = function (app, db) {
     app.get('/api/live-score', async (req, res) => {
         // You'll create your note here.
         var value = await run();
-        res.send(value);
+
+        res.status(200).json({
+            data : value
+        });
     })
 }
