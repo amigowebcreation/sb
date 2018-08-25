@@ -10,6 +10,7 @@ const PUPPETEER_BASE_ARGS = {
         '--no-sandbox',
         '--disable-setuid-sandbox',
         '--disable-dev-shm-usage', // https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md#tips
+        '--single-process',
     ],
 };
 
