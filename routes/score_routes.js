@@ -77,9 +77,9 @@ async function run() {
         else request.continue();
     });
 
-    await page.goto(`http://livescore.com`, {
+    await page.goto(`http://www.livescore.com/soccer/uefa-nations-league/`, {
         waitUntil: 'networkidle2',
-        timeout: 60000
+        timeout: 10000
     });
 
     const { values } = await page.evaluate(extract);
